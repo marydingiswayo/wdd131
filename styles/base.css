@@ -140,9 +140,7 @@ main {
 h1, h2 {
   font-family: 'Lora', serif; /* Optional second Google Font */
   
-}
-ul {
-  margin: bottom;
+
   
 }
 footer {
@@ -444,6 +442,8 @@ footer {
   border-radius: 6px;
   display: block;
   margin: 0 auto 1rem;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .card p {

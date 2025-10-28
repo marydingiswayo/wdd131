@@ -76,7 +76,7 @@ lato-thin {
 
 #course-title {
   display: block; /* Centers the logo and text */
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -84,9 +84,7 @@ nav {
   display: flex;
   justify-content: space-around;
   background-color: #00695c;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -94,8 +92,9 @@ nav a {
   text-align: center;
   padding: 0.75rem;
   color: white;
-
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -111,6 +110,8 @@ nav u1{
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 nav li{
     display: block;
@@ -121,28 +122,37 @@ main {
   margin: 2rem auto;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .card {
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #294e70;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+  max-width: 180px;
+  height: 400px;
+  border-radius: 2px;
+  display: left;
+  margin: auto;
+  width: 180px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
 }
 
 h1, h2 {
   font-family: 'Lora', serif; /* Optional second Google Font */
+}
+.container {
+display: flex;
+flex-direction: center;
+align-items: center;
+}
   
 
-  
-}
 footer {
   background-color: #004d40;
   color: white;
@@ -152,21 +162,23 @@ footer {
 }
 .content-row {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1rem; /* adds space between image and text */
+  text-overflow: initial;
 }
 
 .content-row img {
-  width: 200px; /* adjust as needed */
+  width: 180px; /* adjust as needed */
   height: auto;
   border-radius: 4px;
 }
 
 .content-row p {
   flex: 1; /* allows paragraph to take remaining space */
+  text-decoration: right;
 }
 .profile-row  {
-  display: flex;
+  display: left;
   align-items: center;
   gap: 1rem;
 }
@@ -194,11 +206,6 @@ footer {
   border-radius: 8px;
 }
 
-.profile-row p {
-  flex: 1;
-  font-size: 1rem;
-  line-height: 1.5;
-}
 mary-profile {
   display: flex;
   align-items: center;
@@ -210,7 +217,7 @@ mary-profile {
 }
 
 .row {
-  display: flex;
+  display: inline;
   align-items: center;
   gap: 1rem; /* space between image and text */
 }
@@ -226,29 +233,12 @@ mary-profile {
 }
 .grid {
     display: grid;
-    align-items: center;
+    align-items: baseline;
 }
 
-  nav ul {
-    list-style: none;         /* Removes bullet points */
-    padding: 0;
-    margin: 0;
-    display: flex;            /* Makes list items line up horizontally */
-    gap: 20px;                /* Adds space between links */
-  }
 
   nav li {
     display: inline;          /* Optional with flex, but good for fallback */
-  }
-
-  nav a {
-    text-decoration: none;    /* Removes underline */
-    color: #333;              /* Sets link color */
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    color: #0077cc;           /* Color on hover */
   }
 
 body {
@@ -270,39 +260,26 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 .page-layout {
   display: flex;
-  max-width: 1000px;
-  margin: 2rem auto;
+  max-width: 10000px;
+  margin: 1rem auto;
   gap: 1rem;
+  text-align:margin-left;
 }
 
 main {
-  flex: 3;
+  flex: 2;
+  height: 600px;
+  text-align: left;
 }
+
+
 
 aside.dev-card {
   flex: 1;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -315,20 +292,11 @@ aside.dev-card {
   text-align: center;
 }
 
-.dev-card ul {
-  list-style-type: none;
-  padding: 1rem;
-  margin: 0;
-}
 
 .dev-card li {
   margin-bottom: 0.5rem;
 }
 
-.dev-card a {
-  color: #0077cc;
-  text-decoration: underline;
-}
 
 .dev-card a:hover {
   color: #005fa3;
@@ -343,8 +311,8 @@ aside.dev-card {
 }
 
 .card img {
-  width: 100%;
-  border-radius: 6px;
+  width: 200px;
+  border-radius: 4px;
   margin-bottom: 0.5rem;
 }
 
@@ -354,23 +322,9 @@ footer {
   background-color:#005fa3;
   font-size: 0.9rem;
 }
-.card img {
-  width: 100%;       /* or try 80% for smaller width */
-  max-width: 300px;  /* limits the image size */
-  height: auto;      /* keeps proportions */
-  border-radius: 6px;
-  display: block;
-  margin: 0 auto 0.5rem;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-}
-
 
 .profile-pic {
-  width: 250px;
+  width: 200px;
   height: auto;
   border-radius: 6px;
   display: block;
@@ -382,9 +336,6 @@ footer {
 }
 .dev-card {
   width: 220px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
   margin-left: 1rem;
   overflow: hidden;
@@ -412,21 +363,18 @@ footer {
 .dev-card a {
   color: #0077cc;
   text-decoration: underline;  /* Ensures links are underlined */
-  font-weight: 500;
+  font-weight:3500;
 }
 
-.dev-card a:hover {
-  color: #005fa3;
-}
 .card {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-  max-width: 600px;
+  margin-bottom: 1rem;
+  max-width: 600x;
   margin-left: auto;
-  margin-right: auto;
+  margin-right:auto;
 }
 
 .card h2 {
@@ -436,30 +384,26 @@ footer {
 }
 
 .card img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 6px;
+  max-width: 600px;
+  height: 100px;
   display: block;
-  margin: 0 auto 1rem;
+  margin: left;
 
 }
 
 .card p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #333;
-  text-align: justify;
+  text-align: left;
 }
 
 .card ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 1.5rem;
 }
 
-.card li {
-  margin-bottom: 0.5rem;
-}
+
 
 .card a {
   color: #0077cc;
@@ -467,96 +411,28 @@ footer {
   font-weight: 500;
 }
 
-.card a:hover {
-  color: #005fa3;
-}
 main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-  width: 100%;
-  max-width: 800px; /* Wider than image cards */
-  margin-left: auto;
-  margin-right: auto;
+  align-items: right;
 }
 
-.dev-resources ul {
-  list-style-type: disc;
-  padding-left: 2rem;
-}
-
-.dev-resources li {
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-}
-
-.dev-resources a {
-  color: #0077cc;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.dev-resources a:hover {
-  color: #005fa3;
-}
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.dev-resources ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.dev-resources li {
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
-}
-
-.dev-resources a {
-  color: #0077cc;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.dev-resources a:hover {
-  color: #005fa3;
-}
-main {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .card.dev-resources {
-  max-width: 500px;         /* Slightly smaller than image cards */
+  max-width: 800px;         /* Slightly smaller than image cards */
   padding: 0.75rem;         /* Less padding for compact feel */
   font-size: 0.95rem;       /* Slightly smaller text */
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .dev-resources h2 {
-  font-size: 1.2rem;
+  font-size: 1.rem;
   margin-bottom: 0.5rem;
   color: #0077cc;
-  text-align: center;
+  text-align: left;
 }
 
 .dev-resources ul {
@@ -572,7 +448,7 @@ main {
 .dev-resources a {
   color: #0077cc;
   text-decoration: underline;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .dev-resources a:hover {

@@ -136,7 +136,6 @@ grid-template-columns: 1fr;
   max-width: 180px;
   height: 400px;
   border-radius: 2px;
-  display: left;
   margin: auto;
   width: 180px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -148,8 +147,6 @@ h1, h2 {
 }
 .container {
 display: flex;
-flex-direction: center;
-align-items: center;
 }
   
 
@@ -162,7 +159,6 @@ footer {
 }
 .content-row {
   display: flex;
-  align-items: left;
   gap: 1rem; /* adds space between image and text */
   text-overflow: initial;
 }
@@ -175,10 +171,8 @@ footer {
 
 .content-row p {
   flex: 1; /* allows paragraph to take remaining space */
-  text-decoration: right;
 }
 .profile-row  {
-  display: left;
   align-items: center;
   gap: 1rem;
 }
@@ -265,7 +259,6 @@ header {
   max-width: 10000px;
   margin: 1rem auto;
   gap: 1rem;
-  text-align:margin-left;
 }
 
 main {
@@ -363,7 +356,6 @@ footer {
 .dev-card a {
   color: #0077cc;
   text-decoration: underline;  /* Ensures links are underlined */
-  font-weight:3500;
 }
 
 .card {
@@ -372,7 +364,7 @@ footer {
   padding: 1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
-  max-width: 600x;
+  max-width: 900px;
   margin-left: auto;
   margin-right:auto;
 }
@@ -384,10 +376,9 @@ footer {
 }
 
 .card img {
-  max-width: 600px;
+  max-width: 900px;
   height: 100px;
   display: block;
-  margin: left;
 
 }
 
@@ -415,7 +406,6 @@ main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: right;
 }
 
 
@@ -429,10 +419,9 @@ main {
 }
 
 .dev-resources h2 {
-  font-size: 1.rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #0077cc;
-  text-align: left;
 }
 
 .dev-resources ul {
@@ -441,12 +430,9 @@ main {
   margin: 0;
 }
 
-.dev-resources li {
-  margin-bottom: 0.5rem;
-}
+
 
 .dev-resources a {
-  color: #0077cc;
   text-decoration: underline;
   font-weight: 300;
 }

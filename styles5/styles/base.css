@@ -1,0 +1,103 @@
+mbody {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.page-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+main {
+  flex: 3;
+}
+
+aside.dev-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.dev-card ul {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.dev-card li {
+  margin-bottom: 0.5rem;
+}
+
+.dev-card a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.dev-card a:hover {
+  color: #005fa3;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077cc;
+  font-size: 0.9rem;
+}

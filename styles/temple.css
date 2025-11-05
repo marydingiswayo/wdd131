@@ -154,6 +154,15 @@ footer {
       height: auto;
       border-radius: 8px;
     }
-  
+.container-temple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
 
-
+.container-temple-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

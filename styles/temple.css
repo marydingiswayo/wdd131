@@ -80,7 +80,7 @@ header {
 }
 
 .navigation {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
@@ -142,18 +142,6 @@ footer {
   border-radius: 8px;
 }
 
-    .temple-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .temple-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
 .container-temple-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -80,7 +80,7 @@ header {
 }
 
 .navigation {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
@@ -154,3 +154,7 @@ footer {
   height: auto;
   border-radius: 8px;
 }
+nav {
+  display: flex;
+}
+

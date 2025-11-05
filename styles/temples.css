@@ -80,7 +80,7 @@ header {
 }
 
 .navigation {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;

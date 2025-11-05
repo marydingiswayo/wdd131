@@ -6,12 +6,67 @@ body {
 }
 
 header {
-  background-color: #004080;
+  background-color: #00806f;
   color: white;
   padding: 1rem;
   text-align: center;
   position: relative;
 }
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 
 #menu {
   position: absolute;
@@ -44,7 +99,7 @@ header {
 }
 
 main {
-  max-width: 90%;
+  max-width: 800px;
   margin: auto;
   text-align: center;
 }
@@ -54,6 +109,7 @@ main {
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1rem;
+  border: 1px #800064;
 }
 
 figure {
@@ -61,13 +117,13 @@ figure {
 }
 
 figcaption {
-  background-color: #004080;
+  background-color: #800064;
   color: white;
   padding: 0.5rem;
 }
 
 footer {
-  background-color: #004080;
+  background-color: #00806f;
   color: white;
   text-align: center;
   padding: 1rem;

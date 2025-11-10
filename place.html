@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A responsive picture album showcasing beautiful temples around the world, built with HTML, CSS Grid, Flexbox, and JavaScript.">
+        <meta name="author" content="Mary Dingiswayo">
+        <title>Zimbabwe My Country Page</title>
+        <link rel="stylesheet" href="styles/places.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <script src="scripts/place.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      <header>
+        <h1>Zimbabwe</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Culture</a>
+            <a href="#">Landmarks</a>
+            <a href="#">Weather</a>
+        </nav>
+      </header>
+      <main>
+        <section class="gallery">
+               <img src="images/eastview-scene1.webp" alt="Eastview scene 1" width="310" />
+               <img src="images/eastview-scene2.webp" alt="Eastview scene 2" width="260" />
+               <img src="images/eastview-scene3.webp" alt="Eastview scene 3" width="310" />
+               <img src="images/eastview-scene4.jpg" alt="Eastview scene 4" width="260" />
+        </section>
+        <section class="Hero">
+            <figure>
+                <source srcset="images/zimbabwe-large.webp" media="(min-width:780px)">
+                <img src="images/zimbabwe-small.webp" alt="victoria falls">
+                <img src="images/zimbabwe-large.jpg" alt="Eastview"width="550">
+                <figcaption>victoria falls</figcaption>
+            </figure>
+        <aside class="weather">
+           <h2>Weather ⛅</h2>
+
+             <!-- ✅ SVG icon for mobile view only -->
+             <img src="images/rain-cloud.svg" alt="Weather icon" class="mobile-weather">
+
+             <p>Temperature: 22°C</p>
+             <p>Wind Speed: 5 km/h</p>
+             <p>Wind Chill: <span id="windchill">N/A</span></p>
+         </aside>
+
+      </main>
+      <footer>
+        <p>&copy; <span id="year"></span> Mary Dingiswayo</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </footer>
+    </body>
+</html>

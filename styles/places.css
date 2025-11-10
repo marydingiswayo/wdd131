@@ -1,0 +1,163 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f3ba;
+}
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+header {
+  background-color: #23842b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #e21919;
+  padding: 0.5rem;
+  border-radius: 8%;
+  flex:1;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(133, 45, 45);
+  cursor: pointer;
+}
+
+/* Hero and weather layout */
+.hero-weather {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.hero-weather .hero {
+  flex: 1 1 60%;
+}
+
+.hero-weather .weather {
+  flex: 1 1 35%;
+  background-color: #e0f7fa; /* Replacing var(--accent-color) with actual color */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.hero-weather img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Caption below image */
+.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.weather h2::after {
+  content: " ⛅";
+  display: none;
+}
+
+footer {
+  background-color:#23842b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+@media (min-width: 601px) {
+  h1::after {
+    display: inline;
+  }
+}
+.mobile-weather {
+  display: none;
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .mobile-weather {
+    display: block;
+  }
+}
+
+

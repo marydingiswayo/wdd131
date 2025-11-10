@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff0f3ba;
+
 }
 .lato-light {
   font-family: "Lato", sans-serif;
@@ -75,7 +75,6 @@ nav {
 
 nav a {
   color: white;
-  text-decoration: none;
   background-color: #e21919;
   padding: 0.5rem;
   border-radius: 8%;
@@ -160,4 +159,15 @@ footer {
   }
 }
 
+:root {
+  --primary-color: #0077cc;
+  --secondary-color: #f4f4f4;
+  --font-main: 'Lato', sans-serif;
+  --spacing: 1rem;
+}
+body {
+  font-family: var(--font-main);
+  background-color: var(--secondary-color);
+  margin: var(--spacing);
+}
 

@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-
+  background-color: var(--secondary-color);
 }
 .lato-light {
   font-family: "Lato", sans-serif;
@@ -165,9 +165,5 @@ footer {
   --font-main: 'Lato', sans-serif;
   --spacing: 1rem;
 }
-body {
-  font-family: var(--font-main);
-  background-color: var(--secondary-color);
-  margin: var(--spacing);
-}
+
 

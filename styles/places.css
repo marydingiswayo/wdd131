@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 .lato-light {
   font-family: "Lato", sans-serif;
@@ -164,6 +165,7 @@ footer {
   --secondary-color: #f4f4f4;
   --font-main: 'Lato', sans-serif;
   --spacing: 1rem;
+  --text-color: #333333;
 }
 
 

@@ -129,6 +129,8 @@ document.getElementById("old").addEventListener("click", () => {
   const oldTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
   displayTemples(oldTemples);
 });
+console.log("Temple Album page loaded successfully!");
+
 
 // Dynamic footer dates
 document.getElementById("year").textContent = new Date().getFullYear();

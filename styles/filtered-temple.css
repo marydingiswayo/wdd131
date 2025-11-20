@@ -80,9 +80,8 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-nav {
-  margin-top: 1rem;
-}
+
+
 
 nav button {
   background-color: #0073e6;
@@ -194,11 +193,7 @@ nav ul {
   margin: 0;
 }
 /* Default (desktop) */
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
+
 
 /* Mobile (screens smaller than 600px) */
 @media (max-width: 600px) {

@@ -172,3 +172,42 @@ footer {
   gap: 1rem;
   padding: 1rem;
 }
+nav {
+  display: flex;
+  justify-content: space-around; /* spaces links evenly */
+  align-items: center;           /* vertically centers them */
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  }
+nav a:hover {
+  color: #cc0074;       /* changes text color */
+  background-color: #f0f0f0; /* adds background highlight */
+}
+nav ul {
+  display: flex;
+  gap: 1rem; /* adds spacing between links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Default (desktop) */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Mobile (screens smaller than 600px) */
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr; /* stack cards vertically */
+  }
+
+  nav {
+    flex-direction: column; /* stack nav links */
+  }
+}
+

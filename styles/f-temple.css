@@ -69,7 +69,7 @@ body {
 
 /* Header and Navigation */
 header {
-  background-color: #00806f;; /* AA-compliant with white text */
+  background-color: #004080; /* AA-compliant with white text */
   color: #ffffff;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -80,8 +80,9 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-
-
+nav {
+  margin-top: 1rem;
+}
 
 nav button {
   background-color: #0073e6;
@@ -102,6 +103,7 @@ nav button:hover {
 /* Main Grid Layout */
 main {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 2rem;
 }
@@ -139,10 +141,16 @@ section img {
 
 /* Responsive Layout */
 @media (max-width: 1024px) {
-
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
+  main {
+    grid-template-columns: 4fr;
+  }
+
   nav button {
     width: 100%;
     margin: 0.3rem 0;
@@ -151,51 +159,26 @@ section img {
 
 /* Footer */
 footer {
-  background-color: #00806f;;
+  background-color: #004080;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   margin-top: 2rem;
 }
-#temples {
+.temple-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 1rem;
   padding: 1rem;
 }
-nav {
-  display: flex;
-  justify-content: space-around; /* spaces links evenly */
-  align-items: center;           /* vertically centers them */
-}
 nav a {
   text-decoration: none;
-  color: white;
+  color: #333;
   padding: 8px;
-  }
+}
+
 nav a:hover {
-  color: #cc0074;       /* changes text color */
+  color: #0066cc;       /* changes text color */
   background-color: #f0f0f0; /* adds background highlight */
 }
-nav ul {
-  display: flex;
-  gap: 1rem; /* adds spacing between links */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-/* Default (desktop) */
-
-
-/* Mobile (screens smaller than 600px) */
-@media (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr; /* stack cards vertically */
-  }
-
-  nav {
-    flex-direction: column; /* stack nav links */
-  }
-}
-

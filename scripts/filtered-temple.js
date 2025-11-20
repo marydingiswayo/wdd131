@@ -134,7 +134,7 @@ document.getElementById("old").addEventListener("click", () => {
   displayTemples(oldTemples);
 });
 document.getElementById("new").addEventListener("click", () => {
-  const newTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 1900);
+  const newTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
   displayTemples(newTemples);
 });
 document.getElementById("large").addEventListener("click", () => {

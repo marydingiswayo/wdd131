@@ -103,32 +103,26 @@ footer {
   color: white;
   background-color: #0073e6;
   grid-column: 1 / -1; /* span all columns (only one here) */
-  margin-left: 19rem;
-  margin-right: 19rem;  
 }
+ 
 /* Strong, explicit centering */
 header h1 {
   text-align: center;
   margin: 1rem;              /* remove default h1 margins that can look off-center */
   width: 100%;            /* ensure it spans the header */
-  margin-left: 9rem;
-  margin-right: 9rem;
 }
 /* Flex header */
 header {
   justify-content: center;  /* horizontal */
   align-items: center;       /* vertical (optional) */
   place-items: center;       /* centers both axes */
-  margin-left: 18rem;
-  margin-right: 18rem;
+
 }
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: #0073e6;
   text-align: center;
-  margin-left: 25rem;
-  margin-right: 25rem;
 }
 main {
   margin: 20px;

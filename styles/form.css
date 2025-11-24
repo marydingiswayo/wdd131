@@ -1,3 +1,10 @@
+@media (max-width: 600px) {
+  form {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
 /* Base Reset */
 * {
   box-sizing: border-box;
@@ -96,8 +103,8 @@ footer {
   color: white;
   background-color: #0073e6;
   grid-column: 1 / -1; /* span all columns (only one here) */
-  margin-left: 18.5rem;
-  margin-right: 18.5rem;  
+  margin-left: 19rem;
+  margin-right: 19rem;  
 }
 /* Strong, explicit centering */
 header h1 {
@@ -109,10 +116,8 @@ header h1 {
 }
 /* Flex header */
 header {
-  display: flex;
   justify-content: center;  /* horizontal */
   align-items: center;       /* vertical (optional) */
-  display: grid;
   place-items: center;       /* centers both axes */
   margin-left: 18rem;
   margin-right: 18rem;
@@ -122,8 +127,8 @@ h1, h2, h3 {
   color: white;
   background-color: #0073e6;
   text-align: center;
-  margin-left: 18.5rem;
-  margin-right: 18.5rem;
+  margin-left: 19rem;
+  margin-right: 19rem;
 }
 main {
   margin: 20px;

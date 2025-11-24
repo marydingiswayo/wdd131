@@ -109,10 +109,10 @@ footer {
 /* Strong, explicit centering */
 header h1 {
   text-align: center;
-  margin: 0;              /* remove default h1 margins that can look off-center */
+  margin: 1rem;              /* remove default h1 margins that can look off-center */
   width: 100%;            /* ensure it spans the header */
-  margin-left: 18rem;
-  margin-right: 18rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 /* Flex header */
 header {
@@ -127,8 +127,8 @@ h1, h2, h3 {
   color: white;
   background-color: #0073e6;
   text-align: center;
-  margin-left: 19rem;
-  margin-right: 19rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
 }
 main {
   margin: 20px;

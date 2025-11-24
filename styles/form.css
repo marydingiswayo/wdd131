@@ -1,0 +1,109 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+/* Headings */
+form h2 {
+  text-align: center;
+  color: #004080; /* AA-compliant with white background */
+  margin-bottom: 1.5rem;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Required Field Indicator */
+label.required::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+/* Radio Buttons / Checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Submit Button */
+button {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Accessibility: Focus Styles */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 2px solid #004080;
+  outline-offset: 2px;
+}
+/* Center the main heading */
+header h1 {
+  text-align: center;
+}
+
+/* Center the footer content */
+footer {
+  text-align: center;
+}
+/* Strong, explicit centering */
+header h1 {
+  text-align: center;
+  margin: 0;              /* remove default h1 margins that can look off-center */
+  width: 100%;            /* ensure it spans the header */
+}
+/* Flex header */
+header {
+  display: flex;
+  justify-content: center;  /* horizontal */
+  align-items: center;       /* vertical (optional) */
+}
+
+/* Grid header */
+header {
+  display: grid;
+  place-items: center;       /* centers both axes */
+}

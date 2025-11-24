@@ -1,0 +1,110 @@
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F4F4;
+  color:#00806f;
+  margin: 20px;
+  line-height:1.6 ;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: ;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-left: 5px solid #E67E22;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+ody {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F4F4;
+  color: #2C3E50;
+  margin: 20px;
+}
+heading {
+  font-family: 'Montserrat', sans-serif;
+  color: green
+}
+header {
+  background-color: #00806f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+footer {
+  background-color: #00806f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}

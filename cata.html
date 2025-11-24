@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wine Binding - Contact Us</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Wine Binding</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="review.html">Review Form</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Please fill out the form below and we’ll get back to you soon.</p>
+
+      <form id="contactForm">
+        <!-- Name -->
+        <label for="name" class="required">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email -->
+        <label for="email" class="required">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Optional">
+
+        <!-- Subject -->
+        <label for="subject" class="required">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+
+        <!-- Message -->
+        <label for="message" class="required">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Wine Binding | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

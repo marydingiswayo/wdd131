@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wine Binding - Catalog</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/app.js" defer></script>
-</head>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Wine Binding Company in Harare, Zimbabwe. Explore our catalog of fine wines and contact us today.">
+        <meta name="author" content="Mary Dingiswayo">
+        <title>Wine Binding Company</title>
+        <link rel="stylesheet" href="styles/about.css">
+        <script src="script/project.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
 <body>
   <!-- Header -->
   <header>
+    <img src="images/logo.jpg" alt="wine binding logo"width="100">
+
+
     <h1>Wine Binding</h1>
     <nav>
       <a href="./index.html">Home</a>
-      <a href="./about-us.html">About-Us</a>
-      <a href="./contact.html">Contact Form</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact-Us</a>
     </nav>
   </header>
 
@@ -24,50 +35,112 @@
       <h2>Wine Catalog</h2>
       <p>Explore our finest selection of wines curated for every occasion.</p>
 
-      <div class="wine-grid">
-        <!-- Wine 1 -->
-        <div class="wine-card">
-          <img src="images/redwine.jpg" alt="Cabernet Sauvignon" loading="lazy">
-          <h3>Cabernet Sauvignon</h3>
-          <p>Rich and full-bodied red wine with bold flavors.</p>
-          <p class="price">$25.00</p>
-        </div>
+      <!-- About Us - Most Wanted Wines -->
+<section class="about-wines">
+  <h2>Most Wanted Wines</h2>
+  <p>
+    At Wine Binding Company, these are the top 10 wines our customers love most —
+    each bottle carefully chosen for its taste, heritage, and craftsmanship.
+  </p>
 
-        <!-- Wine 2 -->
-        <div class="wine-card">
-          <img src="images/whitewine.jpg" alt="Chardonnay" loading="lazy">
-          <h3>Chardonnay</h3>
-          <p>Crisp and refreshing white wine, perfect for warm days.</p>
-          <p class="price">$18.00</p>
-        </div>
-
-        <!-- Wine 3 -->
-        <div class="wine-card">
-          <img src="images/sparkling.jpg" alt="Prosecco" loading="lazy">
-          <h3>Prosecco</h3>
-          <p>Light sparkling wine ideal for celebrations and special moments.</p>
-          <p class="price">$22.00</p>
-        </div>
-
-        <!-- Wine 4 -->
-        <div class="wine-card">
-          <img src="images/merlot.jpg" alt="Merlot" loading="lazy">
-          <h3>Merlot</h3>
-          <p>Smooth red wine with soft tannins and fruity notes.</p>
-          <p class="price">$20.00</p>
-        </div>
-
-        <!-- Wine 5 -->
-        <div class="wine-card">
-          
-    </main>
-
-    <!-- Footer -->
+  <table class="wine-table">
+    <thead>
+      <tr>
+        <th>Wine & Image</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="images/cabernet-sauvignog.jpg" alt="Cabernet Sauvignon"loading="lazy">
+          <p><strong>Cabernet Sauvignon</strong></p>
+        </td>
+        <td>$25</td>
+        <td>Bold and full-bodied with notes of blackcurrant, oak, and spice.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Merlot.webp" alt="Merlot" loading="lazy">
+          <p><strong>Merlot</strong></p>
+        </td>
+        <td>$20</td>
+        <td>Smooth and fruity, with soft tannins and hints of plum and chocolate.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/pinot-noir.jpg" alt="Pinot Noir" loading="lazy">
+          <p><strong>Pinot Noir</strong></p>
+        </td>
+        <td>$28</td>
+        <td>Light and silky, with flavors of cherry, raspberry, and earthy undertones.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Malbec.jpg" alt="Malbec"loading="lazy">
+          <p><strong>Malbec</strong></p>
+        </td>
+        <td>$22</td>
+        <td>Rich and velvety, with blackberry, cocoa, and smooth tannins.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/syrah.webp" alt="Syrah" loading="lazy">
+          <p><strong>Syrah/Shiraz</strong></p>
+        </td>
+        <td>$24</td>
+        <td>Spicy and bold, with dark fruit, pepper, and smoky notes.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/zinfandel.jpg" alt="Zinfandel" loading="lazy">
+          <p><strong>Zinfandel</strong></p>
+        </td>
+        <td>$23</td>
+        <td>Jammy and peppery, with high alcohol and bold fruit flavors.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Trempanillo.jpg" alt="Tempranillo" loading="lazy">
+          <p><strong>Tempranillo</strong></p>
+        </td>
+        <td>$21</td>
+        <td>Savory and complex, with cherry, leather, and tobacco notes.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/sparkling-wine.webp" alt="Chardonnay" loading="lazy">
+          <p><strong>Chardonnay</strong></p>
+        </td>
+        <td>$19</td>
+        <td>Tart cherry and herbs, rustic acidity, perfect for pasta dishes.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/white wine.webp" alt="California Rosé Wine" loading="lazy">
+          <p><strong>California Rosé Wine</strong></p>
+        </td>
+        <td>$29.99</td>
+        <td>Juicy and spicy, with strawberry notes and low tannins.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/low-sugar.webp" alt="low sugar Barbera Wine" loading="lazy">
+          <p><strong>Barbera</strong></p>
+        </td>
+        <td>$18</td>
+        <td>Bright acidity, red fruit flavors, and a smooth texture and low sugar content.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<!-- Footer -->
        <footer>
           <nav class="socialmedia">
-            <a href="https://facebook.com"> <img src="images/facebook.png" alt="facebook"></a>
-            <a href="https://linkedin.com"> <img src="images/limkedin.webp" alt="linkedin"></a>
-            <a href="https://instagram.com"> <img src="images/instagram.webp" alt="instagram"></a>
+            <a href="https://facebook.com"> <img src="images/facebook.webp" alt="facebook"width="70"></a>
+            <a href="https://linkedin.com"> <img src="images/linkedin.webp" alt="linkedin"width="70"></a>
+            <a href="https://instagram.com"> <img src="images/instagram.webp" alt="instagram"width="70"></a>
           </nav>
           <p>&copy; <span id="year"></span> Wine Binding | Last Modified: <span id="lastModified"></span></p>
        </footer>

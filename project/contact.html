@@ -1,81 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wine Binding</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/app.js" defer></script>
-</head>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A responsive picture album showcasing beautiful temples around the world, built with HTML, CSS Grid, Flexbox, and JavaScript.">
+        <meta name="author" content="Mary Dingiswayo">
+        <title>Wine Binding Company</title>
+        <link rel="stylesheet" href="styles/contact.css"">
+        <script src="script/project.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
 <body>
   <!-- Header -->
   <header>
+    <img src="images/logo.jpg" alt="wine binding logo"width="100">
+
     <h1>Wine Binding</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About-Us</a>
-      <a href="contact.html">Contact-Form</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact-Us</a>
     </nav>
   </header>
-
-  <!-- Home Section -->
-  <main>
-    <section id="home">
-      <h2>Welcome to Wine Binding</h2>
-      <p>Discover premium wines curated for every occasion. Explore our catalog and share your reviews.</p>
-      <img src="images/wine-banner.jpg" alt="Wine Bottles Banner" loading="lazy">
+   
+    <!-- Stage 1: Employee Image + Contact Info -->
+<div class="stage">
+  <div class="left">
+    <img src="images/employee.jpg" alt="Employee photo" class="employee-img" width="500"loading="lazy">
+    <p class="caption"> Maisha our friendly staff is here to assist you!</p>
+  </div>
+  <div class="right">
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>Wine Binding Company in Zimbabwe!</p>
+      <p>Address: 123 River Run Rd, Harare, Zimbabwe</p>
+      <p>Phone: +263 77 8872407</p>
+      <p>Email: info@winebinding.com</p>
     </section>
+  </div>
+</div>
 
-    <!-- Catalog Section -->
-    <section id="catalog">
-      <h2>Wine Catalog</h2>
-      <div class="wine-grid">
-        <div class="wine-card">
-          <img src="images/redwine.jpg" alt="Red Wine" loading="lazy">
-          <h3>Cabernet Sauvignon</h3>
-          <p>Rich and full-bodied red wine.</p>
-        </div>
+<!-- Stage 2: Map + Contact Form -->
+<div class="stage">
+  <div class="left">
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30383.718160698656!2d31.174602578014746!3d-17.840286370047775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1759402325579!5m2!1sen!2szw"
+        allowfullscreen="" loading="lazy" title="Google Map of Wine Binding Company"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="right">
+    <section class="contact-form">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-        <div class="wine-card">
-          <img src="images/whitewine.jpg" alt="White Wine" loading="lazy">
-          <h3>Chardonnay</h3>
-          <p>Crisp and refreshing white wine.</p>
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
 
-        <div class="wine-card">
-          <img src="images/sparkling.jpg" alt="Sparkling Wine" loading="lazy">
-          <h3>Prosecco</h3>
-          <p>Light sparkling wine perfect for celebrations.</p>
-        </div>
-      </div>
-    </section>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-    <!-- Review Form Section -->
-    <section id="review">
-      <h2>Submit Your Review</h2>
-      <form id="reviewForm">
-        <label class="required">Name</label>
-        <input type="text" id="name" required>
-
-        <label class="required">Wine</label>
-        <input type="text" id="wine" required>
-
-        <label class="required">Review</label>
-        <textarea id="reviewText" required></textarea>
-
-        <button type="submit">Submit Review</button>
+        <button type="submit">Send Message</button>
       </form>
-
-      <div id="reviews"></div>
     </section>
-  </main>
+  </div>
+</div>
+
+   
 
   <!-- Footer -->
   <footer>
+    
     <nav class="socialmedia">
-            <a href="https://facebook.com"> <img src="images/facebook.png" alt="facebook"></a>
-            <a href="https://linkedin.com"> <img src="images/limkedin.webp" alt="linkedin"></a>
-            <a href="https://instagram.com"> <img src="images/instagram.webp" alt="instagram"></a>
+            <a href="https://facebook.com"> <img src="images/facebook.webp" alt="facebook"width="70"></a>
+            <a href="https://linkedin.com"> <img src="images/linkedin.webp" alt="linkedin"width="70"></a>
+            <a href="https://instagram.com"> <img src="images/instagram.webp" alt="instagram"width="70"></a>
           </nav>
           <p>&copy; <span id="year"></span> Wine Binding | Last Modified: <span id="lastModified"></span></p>
   </footer>
